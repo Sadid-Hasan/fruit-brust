@@ -28,8 +28,42 @@
     </style>
 </head>
 <body class="font-lato">
-  <header>
-    
+  <header class="md:container md:mx-auto p-2">
+    <div class="navbar rounded-3xl bg-red-500 px-15">
+      <div class="navbar-start">
+        <div class="navbar-center hidden lg:flex">
+          <ul class=" text-white menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center lg:flex">
+        <img src="images/logo.png" alt="">
+        <h1 class="text-white text-2xl">Fruit Burst</h1>
+      </div>
+      <div class="navbar-end">
+        <!-- Search Input -->
+        <div class="hidden sm:block">
+          <div class="relative flex items-center">
+            <input type="text" class="pl-3 pr-10 py-2 rounded-full focus:outline-none" placeholder="Search here">
+            <!-- Search Icon -->
+            <i class="absolute right-3 top-2 text-black-500 fas fa-search"></i>
+          </div>
+    </div>
   </header>
   <main>
 
